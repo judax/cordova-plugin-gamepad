@@ -1,0 +1,432 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BD441B5F196B6D000063E145 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD441B5E196B6D000063E145 /* Foundation.framework */; };
+		BD441B64196B6D000063E145 /* CordovaPluginGamepad.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BD441B63196B6D000063E145 /* CordovaPluginGamepad.h */; };
+		BD441B66196B6D000063E145 /* CordovaPluginGamepad.m in Sources */ = {isa = PBXBuildFile; fileRef = BD441B65196B6D000063E145 /* CordovaPluginGamepad.m */; };
+		BD441B6D196B6D000063E145 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD441B6C196B6D000063E145 /* XCTest.framework */; };
+		BD441B6E196B6D000063E145 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD441B5E196B6D000063E145 /* Foundation.framework */; };
+		BD441B70196B6D000063E145 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD441B6F196B6D000063E145 /* UIKit.framework */; };
+		BD441B73196B6D000063E145 /* libCordovaPluginGamepad.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD441B5B196B6D000063E145 /* libCordovaPluginGamepad.a */; };
+		BD441B79196B6D000063E145 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BD441B77196B6D000063E145 /* InfoPlist.strings */; };
+		BD441B7B196B6D000063E145 /* CordovaPluginGamepadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BD441B7A196B6D000063E145 /* CordovaPluginGamepadTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BD441B71196B6D000063E145 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD441B53196B6D000063E145 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD441B5A196B6D000063E145;
+			remoteInfo = CordovaPluginGamepad;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BD441B59196B6D000063E145 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				BD441B64196B6D000063E145 /* CordovaPluginGamepad.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BD441B5B196B6D000063E145 /* libCordovaPluginGamepad.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCordovaPluginGamepad.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD441B5E196B6D000063E145 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BD441B62196B6D000063E145 /* CordovaPluginGamepad-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CordovaPluginGamepad-Prefix.pch"; sourceTree = "<group>"; };
+		BD441B63196B6D000063E145 /* CordovaPluginGamepad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CordovaPluginGamepad.h; sourceTree = "<group>"; };
+		BD441B65196B6D000063E145 /* CordovaPluginGamepad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CordovaPluginGamepad.m; sourceTree = "<group>"; };
+		BD441B6B196B6D000063E145 /* CordovaPluginGamepadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CordovaPluginGamepadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD441B6C196B6D000063E145 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		BD441B6F196B6D000063E145 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		BD441B76196B6D000063E145 /* CordovaPluginGamepadTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CordovaPluginGamepadTests-Info.plist"; sourceTree = "<group>"; };
+		BD441B78196B6D000063E145 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BD441B7A196B6D000063E145 /* CordovaPluginGamepadTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CordovaPluginGamepadTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BD441B58196B6D000063E145 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD441B5F196B6D000063E145 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD441B68196B6D000063E145 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD441B6D196B6D000063E145 /* XCTest.framework in Frameworks */,
+				BD441B70196B6D000063E145 /* UIKit.framework in Frameworks */,
+				BD441B6E196B6D000063E145 /* Foundation.framework in Frameworks */,
+				BD441B73196B6D000063E145 /* libCordovaPluginGamepad.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BD441B52196B6D000063E145 = {
+			isa = PBXGroup;
+			children = (
+				BD441B60196B6D000063E145 /* CordovaPluginGamepad */,
+				BD441B74196B6D000063E145 /* CordovaPluginGamepadTests */,
+				BD441B5D196B6D000063E145 /* Frameworks */,
+				BD441B5C196B6D000063E145 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BD441B5C196B6D000063E145 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BD441B5B196B6D000063E145 /* libCordovaPluginGamepad.a */,
+				BD441B6B196B6D000063E145 /* CordovaPluginGamepadTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BD441B5D196B6D000063E145 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD441B5E196B6D000063E145 /* Foundation.framework */,
+				BD441B6C196B6D000063E145 /* XCTest.framework */,
+				BD441B6F196B6D000063E145 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BD441B60196B6D000063E145 /* CordovaPluginGamepad */ = {
+			isa = PBXGroup;
+			children = (
+				BD441B63196B6D000063E145 /* CordovaPluginGamepad.h */,
+				BD441B65196B6D000063E145 /* CordovaPluginGamepad.m */,
+				BD441B61196B6D000063E145 /* Supporting Files */,
+			);
+			path = CordovaPluginGamepad;
+			sourceTree = "<group>";
+		};
+		BD441B61196B6D000063E145 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BD441B62196B6D000063E145 /* CordovaPluginGamepad-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BD441B74196B6D000063E145 /* CordovaPluginGamepadTests */ = {
+			isa = PBXGroup;
+			children = (
+				BD441B7A196B6D000063E145 /* CordovaPluginGamepadTests.m */,
+				BD441B75196B6D000063E145 /* Supporting Files */,
+			);
+			path = CordovaPluginGamepadTests;
+			sourceTree = "<group>";
+		};
+		BD441B75196B6D000063E145 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BD441B76196B6D000063E145 /* CordovaPluginGamepadTests-Info.plist */,
+				BD441B77196B6D000063E145 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BD441B5A196B6D000063E145 /* CordovaPluginGamepad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD441B7E196B6D000063E145 /* Build configuration list for PBXNativeTarget "CordovaPluginGamepad" */;
+			buildPhases = (
+				BD441B57196B6D000063E145 /* Sources */,
+				BD441B58196B6D000063E145 /* Frameworks */,
+				BD441B59196B6D000063E145 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CordovaPluginGamepad;
+			productName = CordovaPluginGamepad;
+			productReference = BD441B5B196B6D000063E145 /* libCordovaPluginGamepad.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		BD441B6A196B6D000063E145 /* CordovaPluginGamepadTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD441B81196B6D000063E145 /* Build configuration list for PBXNativeTarget "CordovaPluginGamepadTests" */;
+			buildPhases = (
+				BD441B67196B6D000063E145 /* Sources */,
+				BD441B68196B6D000063E145 /* Frameworks */,
+				BD441B69196B6D000063E145 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BD441B72196B6D000063E145 /* PBXTargetDependency */,
+			);
+			name = CordovaPluginGamepadTests;
+			productName = CordovaPluginGamepadTests;
+			productReference = BD441B6B196B6D000063E145 /* CordovaPluginGamepadTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BD441B53196B6D000063E145 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Iker Jamardo Zugaza";
+			};
+			buildConfigurationList = BD441B56196B6D000063E145 /* Build configuration list for PBXProject "CordovaPluginGamepad" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BD441B52196B6D000063E145;
+			productRefGroup = BD441B5C196B6D000063E145 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BD441B5A196B6D000063E145 /* CordovaPluginGamepad */,
+				BD441B6A196B6D000063E145 /* CordovaPluginGamepadTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BD441B69196B6D000063E145 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD441B79196B6D000063E145 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BD441B57196B6D000063E145 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD441B66196B6D000063E145 /* CordovaPluginGamepad.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD441B67196B6D000063E145 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD441B7B196B6D000063E145 /* CordovaPluginGamepadTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BD441B72196B6D000063E145 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD441B5A196B6D000063E145 /* CordovaPluginGamepad */;
+			targetProxy = BD441B71196B6D000063E145 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BD441B77196B6D000063E145 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD441B78196B6D000063E145 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BD441B7C196B6D000063E145 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BD441B7D196B6D000063E145 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BD441B7F196B6D000063E145 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				DSTROOT = /tmp/CordovaPluginGamepad.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CordovaPluginGamepad/CordovaPluginGamepad-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					$THIRD_PARTY_PRODUCTS_PATH/Cordova_ios/include,
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		BD441B80196B6D000063E145 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				DSTROOT = /tmp/CordovaPluginGamepad.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CordovaPluginGamepad/CordovaPluginGamepad-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					$THIRD_PARTY_PRODUCTS_PATH/Cordova_ios/include,
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		BD441B82196B6D000063E145 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CordovaPluginGamepad/CordovaPluginGamepad-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CordovaPluginGamepadTests/CordovaPluginGamepadTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		BD441B83196B6D000063E145 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CordovaPluginGamepad/CordovaPluginGamepad-Prefix.pch";
+				INFOPLIST_FILE = "CordovaPluginGamepadTests/CordovaPluginGamepadTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BD441B56196B6D000063E145 /* Build configuration list for PBXProject "CordovaPluginGamepad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD441B7C196B6D000063E145 /* Debug */,
+				BD441B7D196B6D000063E145 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD441B7E196B6D000063E145 /* Build configuration list for PBXNativeTarget "CordovaPluginGamepad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD441B7F196B6D000063E145 /* Debug */,
+				BD441B80196B6D000063E145 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BD441B81196B6D000063E145 /* Build configuration list for PBXNativeTarget "CordovaPluginGamepadTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD441B82196B6D000063E145 /* Debug */,
+				BD441B83196B6D000063E145 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BD441B53196B6D000063E145 /* Project object */;
+}
