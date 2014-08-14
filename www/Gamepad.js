@@ -160,7 +160,7 @@
         }
 
         // Removes JS callbacks/listeners
-        function removeCallback(container, calback) {
+        function removeCallback(container, callback) {
             for (var i = 0; i < container.length; i++) {
                 if (container[i] === callback) {
                     container.splice(i, 1);
