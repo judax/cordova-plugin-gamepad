@@ -47,7 +47,7 @@
             </feature>
         </config-file>
 
-        <source-file src="src/android/src/com/judax/cordova/plugin/gamepad/CordovaPluginGamepad.java" target-dir="src/org/apache/cordova/gamepad" />
+        <source-file src="src/android/src/com/judax/cordova/plugin/gamepad/CordovaPluginGamepad.java" target-dir="com/judax/cordova/plugin/gamepad" />
     </platform>
 
     <!-- ios -->
