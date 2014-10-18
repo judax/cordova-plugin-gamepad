@@ -129,7 +129,7 @@ var cordova = require('cordova');
             return gamepads;
         };
 
-        // Just in case the app was compativle with the prefixed gamepad API, make all of them point to the same function.
+        // Just in case the app was compatible with the prefixed gamepad API, make all of them point to the same function.
         navigator.webkitGetGamepads = navigator.getGamepads;
         navigator.webkitGamepads = navigator.getGamepads;
 
