@@ -161,25 +161,32 @@
 							if (gamepad)
 							{
 								atLeastOneGamepadShown = true;
-								var button0 = gamepad.buttons[Gamepad.BUTTON_0].toFixed(2);
-								var button1 = gamepad.buttons[Gamepad.BUTTON_1].toFixed(2);
-								var button2 = gamepad.buttons[Gamepad.BUTTON_2].toFixed(2);
-								var button3 = gamepad.buttons[Gamepad.BUTTON_3].toFixed(2);
-								var leftBumper = gamepad.buttons[Gamepad.BUTTON_LEFT_BUMPER].toFixed(2);
-								var rightBumper = gamepad.buttons[Gamepad.BUTTON_RIGHT_BUMPER].toFixed(2);
-								var leftTrigger = gamepad.buttons[Gamepad.BUTTON_LEFT_TRIGGER].toFixed(2);
-								var rightTrigger = gamepad.buttons[Gamepad.BUTTON_RIGHT_TRIGGER].toFixed(2);
-								var leftJoystick = gamepad.buttons[Gamepad.BUTTON_LEFT_JOYSTICK].toFixed(2);
-								var rightJoystick = gamepad.buttons[Gamepad.BUTTON_RIGHT_JOYSTICK].toFixed(2);
-								var dpadUp = gamepad.buttons[Gamepad.BUTTON_DPAD_UP].toFixed(2);
-								var dpadDown = gamepad.buttons[Gamepad.BUTTON_DPAD_DOWN].toFixed(2);
-								var dpadLeft = gamepad.buttons[Gamepad.BUTTON_DPAD_LEFT].toFixed(2);
-								var dpadRight = gamepad.buttons[Gamepad.BUTTON_DPAD_RIGHT].toFixed(2);
+								// For now, the Gamepad plugin only supports an old version of the W3C Gamepad API that did not declare the GamepadButton interface.
+								// Check if the interface is being used to decide how to retrieve the information from the buttons.
+								var declaresGamepadButtonInterface = (typeof gamepad.buttons[Gamepad.BUTTON_0]["value"] !== "undefined");
+
+								// Depending if the GamepadButton interface was declared or not:
+								// 1.- GamepadButton is not declared: get the button value directly from the elements of the buttons array.
+								// 2.- GamepadButton is declared: There is an object in each element of the buttons array and the "value" property holds the button value.
+								var button0 = declaresGamepadButtonInterface ? gamepad.buttons[Gamepad.BUTTON_0].value.toFixed(2) : gamepad.buttons[Gamepad.BUTTON_0].toFixed(2);
+								var button1 = declaresGamepadButtonInterface ? gamepad.buttons[Gamepad.BUTTON_1].value.toFixed(2) : gamepad.buttons[Gamepad.BUTTON_1].toFixed(2);
+								var button2 = declaresGamepadButtonInterface ? gamepad.buttons[Gamepad.BUTTON_2].value.toFixed(2) : gamepad.buttons[Gamepad.BUTTON_2].toFixed(2);
+								var button3 = declaresGamepadButtonInterface ? gamepad.buttons[Gamepad.BUTTON_3].value.toFixed(2) : gamepad.buttons[Gamepad.BUTTON_3].toFixed(2);
+								var leftBumper = declaresGamepadButtonInterface ? gamepad.buttons[Gamepad.BUTTON_LEFT_BUMPER].value.toFixed(2) : gamepad.buttons[Gamepad.BUTTON_LEFT_BUMPER].toFixed(2);
+								var rightBumper = declaresGamepadButtonInterface ? gamepad.buttons[Gamepad.BUTTON_RIGHT_BUMPER].value.toFixed(2) : gamepad.buttons[Gamepad.BUTTON_RIGHT_BUMPER].toFixed(2);
+								var leftTrigger = declaresGamepadButtonInterface ? gamepad.buttons[Gamepad.BUTTON_LEFT_TRIGGER].value.toFixed(2) : gamepad.buttons[Gamepad.BUTTON_LEFT_TRIGGER].toFixed(2);
+								var rightTrigger = declaresGamepadButtonInterface ? gamepad.buttons[Gamepad.BUTTON_RIGHT_TRIGGER].value.toFixed(2) : gamepad.buttons[Gamepad.BUTTON_RIGHT_TRIGGER].toFixed(2);
+								var leftJoystick = declaresGamepadButtonInterface ? gamepad.buttons[Gamepad.BUTTON_LEFT_JOYSTICK].value.toFixed(2) : gamepad.buttons[Gamepad.BUTTON_LEFT_JOYSTICK].toFixed(2);
+								var rightJoystick = declaresGamepadButtonInterface ? gamepad.buttons[Gamepad.BUTTON_RIGHT_JOYSTICK].value.toFixed(2) : gamepad.buttons[Gamepad.BUTTON_RIGHT_JOYSTICK].toFixed(2);
+								var dpadUp = declaresGamepadButtonInterface ? gamepad.buttons[Gamepad.BUTTON_DPAD_UP].value.toFixed(2) : gamepad.buttons[Gamepad.BUTTON_DPAD_UP].toFixed(2);
+								var dpadDown = declaresGamepadButtonInterface ? gamepad.buttons[Gamepad.BUTTON_DPAD_DOWN].value.toFixed(2) : gamepad.buttons[Gamepad.BUTTON_DPAD_DOWN].toFixed(2);
+								var dpadLeft = declaresGamepadButtonInterface ? gamepad.buttons[Gamepad.BUTTON_DPAD_LEFT].value.toFixed(2) : gamepad.buttons[Gamepad.BUTTON_DPAD_LEFT].toFixed(2);
+								var dpadRight = declaresGamepadButtonInterface ? gamepad.buttons[Gamepad.BUTTON_DPAD_RIGHT].value.toFixed(2) : gamepad.buttons[Gamepad.BUTTON_DPAD_RIGHT].toFixed(2);
 								var leftJoystickX = gamepad.axes[Gamepad.AXIS_LEFT_JOYSTICK_X].toFixed(2);
 								var leftJoystickY = gamepad.axes[Gamepad.AXIS_LEFT_JOYSTICK_Y].toFixed(2);
 								var rightJoystickX = gamepad.axes[Gamepad.AXIS_RIGHT_JOYSTICK_X].toFixed(2);
 								var rightJoystickY = gamepad.axes[Gamepad.AXIS_RIGHT_JOYSTICK_Y].toFixed(2);
-								var menuButton = gamepad.buttons[16].toFixed(2);
+								var menuButton = declaresGamepadButtonInterface ? gamepad.buttons[16].value.toFixed(2) : gamepad.buttons[16].toFixed(2);
 
 								// Show all the relevant information from the gamepad: id, index, all the buttons and all the axes.
 								drawText(canvasContext, "index = " + gamepad.index + ", id = " + (gamepad.id ? gamepad.id : "") + ", timestamp = " + gamepad.timestamp, x, y, fontSize);
