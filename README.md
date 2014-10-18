@@ -27,8 +27,6 @@ NOTE: The current version is not 100% compliant with the latest version of the W
 		value = gamepad.buttons[j];
 ```
 
-4. Build/run your project.
-
 ##Future improvements
 
 * Add support for Gamepad on Android bellow 2.3. There might be some problems to do this as a brief overlook to the needs state that access to the main activity/view might be needed. More information at: http://developer.android.com/training/game-controllers/compatibility.html
