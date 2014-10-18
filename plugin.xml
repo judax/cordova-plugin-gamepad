@@ -32,12 +32,12 @@
     <repo>https://github.com/judax/cordova-plugin-gamepad.git</repo>
     <issue></issue>
 
-    <asset src="www/Gamepad.js" target="Gamepad.js" />
+    <!-- No longer needed as modules are being used -->
+    <!-- <asset src="www/Gamepad.js" target="Gamepad.js" /> -->
 
-<!--     <js-module src="www/Gamepad.js" name="Gamepad">
-            <runs/>
+    <js-module src="www/Gamepad.js" name="Gamepad">
+        <clobbers target="Gamepad" />
     </js-module>
- -->
 
     <!-- android -->
     <platform name="android">

@@ -1,3 +1,6 @@
+var exec = require('cordova/exec');
+var cordova = require('cordova');
+
 (function() {
     function setupGamepadPlugin() {
 

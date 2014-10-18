@@ -1,6 +1,6 @@
 #cordova-plugin-gamepad
 
-A Cordova plugin to handle the HTML5 gamepad API for iOS and Android. This plugin inject the `navigator.getGamepads` function into the system along with the `gamepadconnected` and `gamepaddisconnected` events into the window event management making any Cordova application to be able to use the underlying game controllers in the system with the same standard API. If the gamepad API is already available (the underlying Cordova webview already supports it) no modifications are made.
+A Cordova plugin to handle the HTML5 gamepad API for iOS and Android. This plugin injects the `navigator.getGamepads` function into the system along with the `gamepadconnected` and `gamepaddisconnected` events into the window event management making any Cordova application to be able to use the underlying game controllers in the system with the same standard API. If the gamepad API is already available (the underlying Cordova webview already supports it) no modifications are made.
 
 ##How to use it
 
@@ -9,21 +9,14 @@ A Cordova plugin to handle the HTML5 gamepad API for iOS and Android. This plugi
 This plugin has been published in the Cordova Plugin Registry (Plugman) so adding it to any Cordova project version 3.0 and above can be done using the Cordova Command Line Interface (CLI).
 
 1. Install the Cordova CLI: https://cordova.apache.org/docs/en/3.0.0/guide_cli_index.md.html
-2. Create a Cordova project and add the desired platforms (remember that this plugins works for iOS and Android for now only): https://cordova.apache.org/docs/en/3.0.0/guide_cli_index.md.html
+2. Create a Cordova project and add the desired platforms (remember that this plugin works for iOS and Android for now only): https://cordova.apache.org/docs/en/3.0.0/guide_cli_index.md.html
 3. Install the plugin with the following command line:
 
 	`cordova plugin add com.judax.cordova.plugin.gamepad`
 
 ###Modifications in your application
 
-Not many modifications are needed in order to be able use the . Indeed only the inclusion of the "Gamepad.js" file is needed (and even this requirement might be removed in the future by using Cordova plugin modules). 
-
-	...
-	<head>
-		<script src="Gamepad.js"></script>
-	...
-
-IMPORTANT: The `navigator.getGamepads` function won't be available until the Cordova `deviceready` event is fired, so make sure that your application does not try to call it before.
+No modifications are needed in your app in order to be able use this plugin. Of course, you need to use the HTML5 Gamepad API as it is shown in the specification (http://www.w3.org/TR/gamepad/).
 
 4. Build/run your project.
 
