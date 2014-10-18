@@ -1,0 +1,17 @@
+{
+    "version": "1.0.0",
+    "name": "com.judax.cordova.plugin.gamepad",
+    "cordova_name": "Gamepad",
+    "description": "Cordova Gamepad Plugin",
+    "license": "Apache 2.0",
+    "repo": "https://github.com/judax/cordova-plugin-gamepad.git",
+    "keywords": [
+        "cordova",
+        "gamepad"
+    ],
+    "platforms": [
+        "android",
+        "ios"
+    ],
+    "engines": []
+}
