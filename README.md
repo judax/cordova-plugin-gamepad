@@ -18,6 +18,15 @@ This plugin has been published in the Cordova Plugin Registry (Plugman) so addin
 
 No modifications are needed in your app in order to be able use this plugin. Of course, you need to use the HTML5 Gamepad API as it is shown in the specification (http://www.w3.org/TR/gamepad/).
 
+NOTE: The current version is not 100% compliant with the latest version of the W3C Gamepad API spec. It is based on a previous spec version that did not include the GamepadButton interface, so the recommendation is to use the following conditional when querying for gamepad button data:
+
+```javascript
+	if (typeof gamepad.buttons[j]["value"] !== "undefined")
+		value = gamepad.buttons[j]["value"];
+	else
+		value = gamepad.buttons[j];
+```
+
 4. Build/run your project.
 
 ##Future improvements
